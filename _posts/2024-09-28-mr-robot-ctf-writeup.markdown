@@ -2,6 +2,8 @@
 layout: post
 title: "Mr. Robot CTF Write-up"
 date: 2024-09-28
+link: https://tryhackme.com/room/mrrobot
+link_text: "Mr. Robot CTF"
 categories: ctf-writeups
 ---
 

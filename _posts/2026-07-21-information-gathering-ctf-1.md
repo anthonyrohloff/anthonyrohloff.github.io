@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Information Gathering CTF 1"
+title: "Information Gathering CTF 1 Write-up"
 date: 2026-07-21
+link: https://my.ine.com/CyberSecurity/learning-paths/61f88d91-79ff-4d8f-af68-873883dbbd8c/penetration-testing-student
+link_text: "INE eJPT Course"
 categories: ctf-writeups
 ---
 
@@ -35,9 +37,10 @@ In this lab, the flag will follow the format: FLAG1{MD5Hash} OR FL@G1{MD5Hash}. 
 
 To find this flag, simply navigate to **http://target.ine.local/robots.txt**.
 
-![First flag](/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_1.png "Figure 1: Finding the first flag in robots.txt")
-
-*Figure 1: Finding the first flag in robots.txt*
+<figure>
+  <img src="/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_1.png" style="display: block; margin: 0 auto;" />
+  <figcaption style="text-align: center;">Figure 1: Finding the first flag in robots.txt</figcaption>
+</figure>
 
 ---
 # Task 2
@@ -48,8 +51,10 @@ The `whatweb` tool can be used to find this flag.
 
 `whatweb http://target.ine.local`
 
-![Second flag](/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_2.png "Figure 2: Finding the second flag with whatweb")
-*Figure 2: Finding the second flag with whatweb*
+<figure>
+  <img src="/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_2.png" style="display: block; margin: 0 auto;" />
+  <figcaption style="text-align: center;">Figure 2: Finding the second flag with whatweb</figcaption>
+</figure>
 
 ---
 # Task 3
@@ -62,16 +67,17 @@ The `dirb` tool can be used to browse directories.
 
 At the end of the `dirb` scan, an interesting directory `/wp-content/uploads` can be found.
 
-![Third flag investigation](/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_task_3.png "Figure 3: Identifying where to look for the third flag")
-
-*Figure 3: Identifying where to look for third flag*
-
-
-
-![Third flag](/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_3.png "Figure 4: Finding third flag in /wp-content/uploads")
+<figure>
+  <img src="/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_task_3.png" style="display: block; margin: 0 auto;" />
+  <figcaption style="text-align: center;">Figure 3: Identifying where to look for the third flag</figcaption>
+</figure>
 
 
-*Figure 4: Finding third flag in /wp-content/uploads*
+
+<figure>
+  <img src="/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_3.png" style="display: block; margin: 0 auto;" />
+  <figcaption style="text-align: center;">Figure 4: Finding third flag in /wp-content/uploads</figcaption>
+</figure>
 
 ---
 # Task 4
@@ -82,14 +88,17 @@ To search for common backup file extensions like `.bak` and `.zip`, use `dirb` w
 
 `dirb http://target.ine.local -X .bak,.tar.gz,.zip,.sql,.bak.zip`
 
-![Fourth flag investigation](/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_task_4.png "Figure 5: Finding the backup file")
-*Figure 5: Finding the backup file*
+<figure>
+  <img src="/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_task_4.png" style="display: block; margin: 0 auto;" />
+  <figcaption style="text-align: center;">Figure 5: Finding the backup file</figcaption>
+</figure>
 
 Then, `curl` any interesting results.
 
-![Fourth flag](/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_4.png "Figure 6: Finding the fourth flag with curl")
-
-*Figure 6: Finding the fourth flag with curl*
+<figure>
+  <img src="/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_4.png" style="display: block; margin: 0 auto;" />
+  <figcaption style="text-align: center;">Figure 6: Finding the fourth flag with curl</figcaption>
+</figure>
 
 ---
 # Task 5
@@ -100,10 +109,14 @@ First, use `httrack` to mirror the site onto the local machine.
 
 `httrack http://target.ine.local --mirror`
 
-![Fifth flag investigation](/assets/writeup_assets/info-gathering-ctf-writeup/httrack_mirroring.png "Figure 7: Using httrack")
-*Figure 7: Using httrack*
+<figure>
+  <img src="/assets/writeup_assets/info-gathering-ctf-writeup/httrack_mirroring.png" style="display: block; margin: 0 auto;" />
+  <figcaption style="text-align: center;">Figure 7: Using httrack</figcaption>
+</figure>
 
 Then, enter the directory `httrack` created, and `cat` out the `xmlrpx0db0.php` file to find the flag.
 
-![Fifth flag](/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_5.png "Figure 8: Finding the last flag from the mirrored site")
-*Figure 8: Finding the last flag from the mirrored site*
+<figure>
+  <img src="/assets/writeup_assets/info-gathering-ctf-writeup/info_ctf_flag_5.png" style="display: block; margin: 0 auto;" />
+  <figcaption style="text-align: center;">Figure 8: Finding the last flag from the mirrored site</figcaption>
+</figure>

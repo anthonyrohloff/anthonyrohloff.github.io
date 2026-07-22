@@ -2,6 +2,8 @@
 layout: post
 title: "Library CTF Write-up"
 date: 2024-09-30
+link: https://tryhackme.com/room/bsidesgtlibrary
+link_text: "Library CTF"
 categories: ctf-writeups
 ---
 

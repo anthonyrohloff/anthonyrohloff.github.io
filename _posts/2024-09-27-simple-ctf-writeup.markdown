@@ -2,6 +2,8 @@
 layout: post
 title: "Simple CTF Write-up"
 date: 2024-09-27
+link: https://tryhackme.com/room/easyctf
+link_text: "Simple CTF"
 categories: ctf-writeups
 ---
 

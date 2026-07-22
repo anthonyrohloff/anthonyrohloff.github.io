@@ -2,6 +2,8 @@
 layout: post
 title: "Crack the Hash CTF Write-up"
 date: 2024-09-29
+link: https://tryhackme.com/room/crackthehash
+link_text: "Crack the Hash CTF"
 categories: ctf-writeups
 ---
 

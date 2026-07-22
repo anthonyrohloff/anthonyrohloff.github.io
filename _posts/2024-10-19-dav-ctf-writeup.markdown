@@ -2,6 +2,8 @@
 layout: post
 title: "DAV CTF Write-up"
 date: 2024-10-19
+link: https://tryhackme.com/room/bsidesgtdav
+link_text: "DAV CTF"
 categories: ctf-writeups
 ---
 

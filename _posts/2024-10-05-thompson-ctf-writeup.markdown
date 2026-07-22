@@ -2,6 +2,8 @@
 layout: post
 title: "Thompson CTF Write-up"
 date: 2024-10-05
+link: https://tryhackme.com/room/bsidesgtthompson
+link_text: "Thompson CTF"
 categories: ctf-writeups
 ---
 
