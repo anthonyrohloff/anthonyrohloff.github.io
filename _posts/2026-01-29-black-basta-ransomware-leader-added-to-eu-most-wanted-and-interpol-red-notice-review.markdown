@@ -6,6 +6,7 @@ categories: blog-posts
 ---
 
 ![Oleg Evgenievich Nefedov](/assets/blog_assets/black-basta/nefedov.jpg)
+*INTERPOL Notice for Oleg Evgenievich Nefedov*
 
 In an article from *The Hacker News* by Ravie Lakshmanan, it is reported that Ukrainian and German
 law enforcement agencies are working together to take down a Russian ransomware-as-a-service group

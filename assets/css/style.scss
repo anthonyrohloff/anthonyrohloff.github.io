@@ -46,3 +46,19 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Only targets <em> tags that immediately follow an image, or follow an image in the same paragraph */
+p > img + br + em,
+p > img + em,
+figure > figcaption {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
