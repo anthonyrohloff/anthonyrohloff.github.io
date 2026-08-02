@@ -45,7 +45,7 @@ The first step is to run an Nmap scan.
 - `-sS`: runs a TCP SYN scan
 - `-A`: enables OS detection, version detection, script scanning, and traceroute
 - `-p-`: sets the port range from 1-65535
-- `T4`: sets the aggressiveness of the scan to a 4 out of 5
+- `-T4`: sets the aggressiveness of the scan to a 4 out of 5
 
 ![](/assets/writeup_assets/enumeration_ctf_1_writeup/nmap.png)
 *Figure 1: Nmap scan showing running services and open ports*
