@@ -95,6 +95,6 @@ The `User-Agent` field contains `Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US
 Similar to task 2, do `frame contains "Coinbase"`, copy the packet as printable text, paste it into a text editor, and search for `Coinbase` in the text. The flag will appear next to `Coinbase`.
 
 ![](/assets/writeup_assets/network_based_attacks_ctf_1_writeup/file_data_2.png)
-*Figure 2: Copying the packet data*
+*Figure 6: Copying the packet data*
 
 The text found is `hnfanknocfeofbddgcijnmhnfnkdnaad|Coinbase`. The final flag is `hnfanknocfeofbddgcijnmhnfnkdnaad`.
