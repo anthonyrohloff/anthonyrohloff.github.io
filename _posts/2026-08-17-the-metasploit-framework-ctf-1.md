@@ -122,3 +122,5 @@ This task also requires the escalated privileges used in task 2. Use that same s
 
 ![](/assets/writeup_assets/the_metasploit_framework_ctf_1_writeup/flag4.png)
 *Figure 11: Flag 4*
+
+The fourth flag is `0e2ae1b7012f463a954a3df1bcdfe504`.
