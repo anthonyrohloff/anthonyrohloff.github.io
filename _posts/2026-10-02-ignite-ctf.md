@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ignite CTF Write-up"
-date: 2026-09-29
+date: 2026-10-02
 link: https://tryhackme.com/room/ignite
 link_text: "Ignite"
 categories: ctf-writeups
